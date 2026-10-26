@@ -1,4 +1,4 @@
-import { Goose, Rain } from './icons/Goose';
+import { SAMYOU_WORDMARK_DATA_URI } from './icons/SamyouWordmark';
 import { cn } from '../utils';
 
 interface GooseLogoProps {
@@ -7,43 +7,22 @@ interface GooseLogoProps {
   hover?: boolean;
 }
 
+// Brand logo for 三友智能助手. Keeps the original GooseLogo API so existing
+// callers do not change; the goose SVG + rain hover effect are replaced by
+// the SAMYOU wordmark (wide lockup, contained in the original square frame).
 export default function GooseLogo({
   className = '',
   size = 'default',
-  hover = true,
 }: GooseLogoProps) {
-  const sizes = {
-    default: {
-      frame: 'w-16 h-16',
-      rain: 'w-[275px] h-[275px]',
-      goose: 'w-16 h-16',
-    },
-    small: {
-      frame: 'w-8 h-8',
-      rain: 'w-[150px] h-[150px]',
-      goose: 'w-8 h-8',
-    },
-  } as const;
-
-  const currentSize = sizes[size];
+  const frame = size === 'small' ? 'w-8 h-8' : 'w-16 h-16';
 
   return (
-    <div
-      className={cn(
-        className,
-        currentSize.frame,
-        'relative overflow-hidden',
-        hover && 'group/with-hover'
-      )}
-    >
-      <Rain
-        className={cn(
-          currentSize.rain,
-          'absolute left-0 bottom-0 transition-all duration-300 z-1',
-          hover && 'opacity-0 group-hover/with-hover:opacity-100'
-        )}
+    <div className={cn(className, frame, 'relative overflow-hidden')}>
+      <img
+        src={SAMYOU_WORDMARK_DATA_URI}
+        alt="SAMYOU"
+        className="absolute inset-0 m-auto max-h-full max-w-full object-contain"
       />
-      <Goose className={cn(currentSize.goose, 'absolute left-0 bottom-0 z-2')} />
     </div>
   );
 }

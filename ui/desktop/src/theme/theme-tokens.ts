@@ -91,49 +91,52 @@ type ColorTokens = Pick<ThemeTokens, ColorTokenKey>;
 // ---------------------------------------------------------------------------
 // Light theme — colors & shadows
 // ---------------------------------------------------------------------------
+// MUJI theme (customer template palette): warm neutrals, near-black text,
+// MUJI red #9C2A2A for key/danger accents, deep red #7F0019 for totals.
+// Functional info/success/warning colors are intentionally unchanged.
 const lightColorTokens: ColorTokens = {
   // Backgrounds
   '--color-background-primary': '#ffffff',
-  '--color-background-secondary': '#f4f6f7',
-  '--color-background-tertiary': '#e3e6ea',
-  '--color-background-inverse': '#000000',
+  '--color-background-secondary': '#F0EFEC',
+  '--color-background-tertiary': '#E9E8E5',
+  '--color-background-inverse': '#3A3A3A',
   '--color-background-ghost': 'transparent',
   '--color-background-info': '#5c98f9',
-  '--color-background-danger': '#f94b4b',
+  '--color-background-danger': '#9C2A2A',
   '--color-background-success': '#91cb80',
   '--color-background-warning': '#fbcd44',
-  '--color-background-disabled': '#e3e6ea',
+  '--color-background-disabled': '#E9E8E5',
 
   // Text
-  '--color-text-primary': '#3f434b',
-  '--color-text-secondary': '#878787',
+  '--color-text-primary': '#1A1A1A',
+  '--color-text-secondary': '#595959',
   '--color-text-tertiary': '#a7b0b9',
   '--color-text-inverse': '#ffffff',
-  '--color-text-ghost': '#878787',
+  '--color-text-ghost': '#595959',
   '--color-text-info': '#5c98f9',
-  '--color-text-danger': '#f94b4b',
+  '--color-text-danger': '#9C2A2A',
   '--color-text-success': '#91cb80',
   '--color-text-warning': '#fbcd44',
-  '--color-text-disabled': '#cbd1d6',
+  '--color-text-disabled': '#DCDBD7',
 
   // Borders
-  '--color-border-primary': '#e3e6ea',
-  '--color-border-secondary': '#e3e6ea',
-  '--color-border-tertiary': '#cbd1d6',
-  '--color-border-inverse': '#000000',
+  '--color-border-primary': '#DCDBD7',
+  '--color-border-secondary': '#E9E8E5',
+  '--color-border-tertiary': '#DCDBD7',
+  '--color-border-inverse': '#3A3A3A',
   '--color-border-ghost': 'transparent',
   '--color-border-info': '#5c98f9',
-  '--color-border-danger': '#f94b4b',
+  '--color-border-danger': '#9C2A2A',
   '--color-border-success': '#91cb80',
   '--color-border-warning': '#fbcd44',
-  '--color-border-disabled': '#e3e6ea',
+  '--color-border-disabled': '#E9E8E5',
 
   // Rings
-  '--color-ring-primary': '#e3e6ea',
-  '--color-ring-secondary': '#cbd1d6',
+  '--color-ring-primary': '#DCDBD7',
+  '--color-ring-secondary': '#DCDBD7',
   '--color-ring-inverse': '#ffffff',
   '--color-ring-info': '#5c98f9',
-  '--color-ring-danger': '#f94b4b',
+  '--color-ring-danger': '#9C2A2A',
   '--color-ring-success': '#91cb80',
   '--color-ring-warning': '#fbcd44',
 

@@ -27,23 +27,23 @@
   --color-white: #ffffff;
   --color-black: #000000;
 
-  --color-block-teal: #13bbaf;
-  --color-block-orange: #ff4f00;
+  --color-block-teal: #9C2A2A; /* MUJI red (was teal) */
+  --color-block-orange: #7F0019; /* MUJI deep red (was orange) */
 
-  --color-neutral-50: #f4f6f7;
-  --color-neutral-100: #e3e6ea;
-  --color-neutral-200: #cbd1d6;
-  --color-neutral-300: #a7b0b9;
+  --color-neutral-50: #FAF6F2; /* MUJI input-cell fill */
+  --color-neutral-100: #F0EFEC; /* MUJI total-row fill */
+  --color-neutral-200: #E9E8E5; /* MUJI sub-section fill */
+  --color-neutral-300: #DCDBD7; /* MUJI column-header fill */
   --color-neutral-400: #878787;
-  --color-neutral-500: #606c7a;
-  --color-neutral-600: #525b68;
+  --color-neutral-500: #595959; /* MUJI secondary text */
+  --color-neutral-600: #3A3A3A; /* MUJI section-header fill */
   --color-neutral-700: #474e57;
   --color-neutral-800: #3f434b;
   --color-neutral-900: #32353b;
   --color-neutral-950: #22252a;
 
-  --color-red-100: #ff6b6b;
-  --color-red-200: #f94b4b;
+  --color-red-100: #9C2A2A; /* MUJI red */
+  --color-red-200: #7F0019; /* MUJI deep red */
 
   --color-blue-100: #7cacff;
   --color-blue-200: #5c98f9;
