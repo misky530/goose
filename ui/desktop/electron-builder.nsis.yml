@@ -5,12 +5,12 @@
 # Also the shortcut AppUserModelID and the registry key the install is recorded under. Matches
 # the macOS bundle identifier electron-packager derives from the product name. Updates and
 # uninstalls find the existing install through it, so it must never change.
-appId: com.electron.goose
+appId: com.samyou.assistant
 # Publisher shown by Apps & features, the same as the deb and rpm maintainer. Injected here so
 # package.json and the forge build stay unchanged.
 extraMetadata:
   author:
-    name: AAIF (Agentic AI Foundation)
+    name: 珠海三友环境技术有限公司
 directories:
   output: out/make/nsis/win32/x64
 # release.yml generates installer.yml from the published setup executable instead.
